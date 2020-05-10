@@ -22,6 +22,8 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+    - name: Report Coverage
+      uses: codecov/codecov-action@v1
     # Publish
     - name: publish on version change
       id: publish_nuget
@@ -34,4 +36,5 @@ jobs:
         TAG_FORMAT: v*
         # API key to authenticate with NuGet server
         NUGET_KEY: ${{secrets.NUGET_KEY}}
+      
   
