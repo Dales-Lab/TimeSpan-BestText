@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Dale Myszewski &lt;dale@daleslab.com&gt;</Authors>
+    <PackageProjectUrl>https://github.com/Dales-Lab/TimeSpan-BestText</PackageProjectUrl>
+    <Title>Simple extension to provide the best possible text for a given timespan.</Title>
+    <Description>Simple extension to provide the best possible text for a given timespan</Description>
+    <ReleaseVersion>1.0.0</ReleaseVersion>
+    <SynchReleaseVersion>false</SynchReleaseVersion>
+  </PropertyGroup>
+
+</Project>
