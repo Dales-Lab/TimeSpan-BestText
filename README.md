@@ -4,7 +4,7 @@ Simple extension designed to provide you the best output for a given TimeSpan. T
 
 ## Usage
 ```
-using DalesLab.Timespan.BestText
+using DalesLab.Timespan.BestText;
 
 ...
 TimeSpan testSpan = (DateTime.Now - DateTime.Now.AddSeconds(-30));
