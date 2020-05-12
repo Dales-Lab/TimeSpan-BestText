@@ -6,9 +6,9 @@
     <PackageProjectUrl>https://github.com/Dales-Lab/TimeSpan-BestText</PackageProjectUrl>
     <Title>TImeSpan.BestText</Title>
     <Description>TImeSpan.BestText is a simple extension designed to provide you the best text output for a given TimeSpan in either milliseconds, seconds, minutes, hours or days.</Description>
-    <ReleaseVersion>1.0.1</ReleaseVersion>
+    <ReleaseVersion>1.0.2</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
-    <PackageVersion>1.0.1</PackageVersion>
+    <PackageVersion>1.0.2</PackageVersion>
   </PropertyGroup>
 
 </Project>
