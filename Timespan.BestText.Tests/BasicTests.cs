@@ -4,7 +4,7 @@ using DalesLab.Timespan.BestText;
 
 namespace Timespan.BestText.Tests
 {
-    public class UnitTests
+    public class BasicTests
     {
         [Fact]
         public void Milliseonds()
@@ -74,6 +74,31 @@ namespace Timespan.BestText.Tests
         {
             TimeSpan testSpan = (DateTime.Now - DateTime.Now.AddDays(-20));
             Assert.Equal("20 days", testSpan.BestText());
+        }
+    }
+
+    public class PrecisionTests
+    {
+        [Fact]
+        public void TwoPoints()
+        {
+            TimeSpan testSpan = (DateTime.Now - DateTime.Now.AddMilliseconds(-5123));
+            Assert.Equal("5.12 seconds", testSpan.BestText(2));
+
+        }
+
+        [Fact]
+        public void ThreePoints()
+        {
+            TimeSpan testSpan = (DateTime.Now - DateTime.Now.AddMilliseconds(-5123));
+            Assert.Equal("5.123 seconds", testSpan.BestText(3));
+        }
+
+        [Fact]
+        public void TwoPointsRoundUp()
+        {
+            TimeSpan testSpan = (DateTime.Now - DateTime.Now.AddMilliseconds(-5229));
+            Assert.Equal("5.23 seconds", testSpan.BestText(2));
         }
     }
 }
